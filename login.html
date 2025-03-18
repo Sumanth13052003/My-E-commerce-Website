@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="login.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <!-- User Profile Section (Initially hidden) -->
+            <div class="user-profile" id="user-profile" style="display: none;">
+                <img id="user-image" src="default-user.jpg" alt="User Image" />
+                <span id="user-name"></span>
+                <button id="logout-btn" style="margin-left: 15px;">Logout</button> <!-- Logout button -->
+            </div>
+        </nav>
+    </header>
+    
+    <section class="auth-forms">
+        <!-- Toggle between Login and Signup -->
+        <div class="auth-toggle">
+            <button id="login-toggle" class="active">Login</button>
+            <button id="signup-toggle">Signup</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="auth-form">
+            <h2>Login</h2>
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="username" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Signup Form (Hidden by Default) -->
+        <form id="signupForm" class="auth-form" style="display: none;">
+            <h2>Signup</h2>
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" name="username" required>
+
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required>
+
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="password" required>
+
+            <button type="submit">Signup</button>
+        </form>
+
+        <!-- Success message -->
+        <div id="auth-message" style="display: none;">Success! Redirecting...</div>
+    </section>
+
+    
+
+    <script src="login.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
