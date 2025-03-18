@@ -1,0 +1,136 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    background-color: #CEA968;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Dark text color */
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #ffcc00; /* Yellow background for the header */
+    padding: 20px 0; /* Padding around header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    font-size: 2.5em; /* Increase font size */
+    color: #333; /* Dark gray color for text */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('images/product14.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 100px 20px; /* Padding for hero section */
+}
+
+.hero-content {
+    max-width: 600px; /* Limit width of the content */
+    margin: 0 auto; /* Center the content */
+}
+
+.hero h1 {
+    font-size: 3em; /* Large font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger font size */
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 40px; /* Padding for contact section */
+    max-width: 600px; /* Limit width of the content */
+    margin: 40px auto; /* Center the section */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#contact form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Vertical layout */
+}
+
+label {
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px; /* Padding for inputs */
+    margin-bottom: 20px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ff6600; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    padding: 12px; /* Padding for button */
+    background-color: #ff6600; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1.1em; /* Larger font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
