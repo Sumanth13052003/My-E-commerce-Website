@@ -1,0 +1,173 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    background-color: #CEA968;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Dark text color */
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #ffcc00; /* Yellow background for the header */
+    padding: 20px 0; /* Padding around header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; 
+    justify-content: space-between; /* Space between the left and right sides */
+    align-items: center; /* Center align vertically */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    flex-grow: 1; /* Allow nav to grow and take up available space */
+    justify-content: center; /* Center navigation links */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center align items within the nav */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between links */
+}
+
+nav ul li a {
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* User Profile Styles */
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push profile section to the right */
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fff;
+}
+
+.user-profile span {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Logout Button */
+#logout-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#logout-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Toggle Between Login and Signup */
+.auth-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.auth-toggle button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.auth-toggle button.active {
+    background-color: #e65c00;
+}
+
+.auth-toggle button:hover {
+    background-color: #ff8c00;
+}
+
+/* Form Styling */
+.auth-forms {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form {
+    display: none; /* Hidden by default */
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-form button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: #e65c00;
+}
+
+/* Success message styles */
+#auth-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #28a745;
+}
