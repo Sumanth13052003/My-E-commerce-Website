@@ -1,0 +1,161 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    /*background-color: #f0f4f8;  Light background for the body */
+    background-image: url('images/product15.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #ffcc00; /* Yellow background for the header */
+    padding: 20px 0; /* Padding around header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    font-size: 2.5em; /* Increase font size */
+    color: #333; /* Dark gray color for text */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/product15.jpg'); /* Gradient overlay with background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 100px 20px; /* Padding for hero section */
+}
+
+.hero h1 {
+    font-size: 3.5em; /* Large font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.hero p {
+    font-size: 1.5em; /* Slightly larger font size */
+    max-width: 600px; /* Limit width of the content */
+    margin: 0 auto; /* Center the content */
+}
+
+/* About Section Styles */
+#about {
+    padding: 40px; /* Padding for about section */
+    max-width: 800px; /* Limit width of the content */
+    margin: 40px auto; /* Center the section */
+    background-color: rgba(255, 255, 255, 0.6); /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#about h2 {
+    text-align: center; /* Centered heading */
+    font-size: 2.5em; /* Larger font size */
+    color: #a5860a; /* Dark color for heading */ 
+    margin-bottom: 20px; /* Space below heading */
+}
+
+#about h1 {
+    text-align: center; /* Centered heading */
+    font-size: 2.5em; /* Larger font size */
+    color: #333; /* Dark color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+.line {
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the line */
+    background-color: #333; /* Line color */
+    margin: 20px 0; /* Spacing above and below */
+}
+
+#about p {
+    margin-bottom: 20px; /* Space below paragraph */
+    color: #555; /* Slightly lighter color */
+    line-height: 1.8; /* Increase line height for better readability */
+}
+
+/* Team Section Styles */
+#team {
+    padding: 40px; /* Padding for team section */
+    background-color: #f9f9f9; /* Light background for team section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 40px auto; /* Center the section */
+}
+
+#team h2 {
+    text-align: center; /* Centered heading */
+    font-size: 2.5em; /* Larger font size */
+    color: #333; /* Dark color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Team Member Card Styles */
+.team-member {
+    display: flex; /* Use flexbox for member layout */
+    align-items: center; /* Align items vertically */
+    background-color: #ffffff; /* White background for member cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin-bottom: 20px; /* Space between team members */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+}
+
+.team-member img {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    border-radius: 50%; /* Circular images */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.team-member h3 {
+    font-size: 1.5em; /* Member name font size */
+    color: #333; /* Dark color for member name */
+}
+
+.team-member p {
+    color: #777; /* Grey color for member role or description */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
