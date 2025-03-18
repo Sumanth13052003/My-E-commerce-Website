@@ -1,0 +1,162 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #CEA968;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00; /* Yellow background for the header */
+    padding: 20px 0; /* Padding around header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    font-size: 2.5em; /* Increase font size */
+    color: #333; /* Dark gray color for text */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Cart Section Styles */
+#cart-items {
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+}
+
+#cart-items h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6600; /* Orange color */
+}
+
+/* Align Cart Items */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.cart-item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item h5 {
+    margin: 0;
+    flex: 1;
+}
+
+/* Align Quantity Input */
+.cart-item input[type="number"] {
+    width: 50px;
+    margin: 0 15px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.cart-item input[type="number"]:focus {
+    border-color: #ff6600;
+}
+
+/* Button Styles */
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+button:hover {
+    background: #218838;
+}
+
+button:disabled {
+    background: #ccc;
+}
+
+/* Total Price Section */
+#cart-total {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ff6600;
+}
+
+html, body {
+    height: 100%; /* Full height for body */
+}
+
+.wrapper {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+main {
+    flex: 1; /* Allow the main to grow and take available space */
+    padding: 20px; /* Add some padding to the main content */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
